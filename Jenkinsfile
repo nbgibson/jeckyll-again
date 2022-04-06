@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-        //DOCKERUSER = credentials('dockerUsername')
-        //DOCKERTOKEN = credentials('dockerToken')
-    }
+    /*environment {
+        DOCKERUSER = credentials('dockerUsername')
+        DOCKERTOKEN = credentials('dockerToken')
+    }*/
     stages {
         stage('Docker Build') {
             steps {
